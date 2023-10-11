@@ -10,4 +10,3 @@ for(let i=0; i<list.length; i++) {
   studentArr[i] = new student(list[0], i+1)
 }
 console.log(studentArr);
-
