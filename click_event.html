@@ -8,11 +8,16 @@
 <body>
   <div id="root"><button id="button-click">Click</button></div>
   <script>
-    const buttonClick = document.getElementById('button-click');
+    const root = document.getElementById('root');
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+    root.style.backgroundColor = "red"
+    //단위를 px사용 시 안먹힌다.
+    //vw,vh 사용 시 작업이 먹힌다.
 
-    buttonClick.addEventListener('click', () => {
-      console.log("클릭했다")
-    })
+    root.addEventListener('wheel', event => {
+      console.log(event)
+    });
   </script>
 </body>
 </html>
