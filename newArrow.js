@@ -6,4 +6,4 @@ function outerOne(a) {
   }
   innerOne(a);
 }
-console.log(outerOne("hello"))
+console.log(outerOne("hello"));
